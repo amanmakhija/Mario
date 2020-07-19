@@ -1,0 +1,42 @@
+.name {
+    background: url('https://cdn3.vectorstock.com/i/1000x1000/58/72/old-retro-video-game-super-mario-bros-background-vector-29035872.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    position: relative;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.name img {
+    position: absolute;
+    bottom: 210px;
+    animation: mariorun;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes mariorun {
+    0% {left: 0%;}
+    100% {left: 88%;}
+}
+h1 {
+    color: rgb(20, 236, 38);
+    text-transform: uppercase;
+    font-size: 3em;
+    font-family: 'Bangers',cursive;
+    letter-spacing: 3px;
+    padding-top: 70px;
+    text-align: center;
+    animation: mario 3s linear;
+    animation-iteration-count: infinite;
+}
+@keyframes mario {
+    0% {font-size: 3em;}
+    100% {font-size: 4em;}
+}
+h1:hover {
+    color: red;
+    font-size: 60px;
+}
